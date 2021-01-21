@@ -10,6 +10,12 @@ class Person {
   //Shortcut
   //Person(this.name, [this.age = 18]);
 
+  //Named Constructor
+  Person.guest() {
+    name = 'Guest';
+    age = 18;
+  }
+
   void showDetails() {
     print(name);
     print(age);
@@ -23,4 +29,7 @@ main() {
 
   var person2 = Person('Deola', 40);
   person2.showDetails();
+
+  var person3 = Person.guest();
+  person3.showDetails();
 }
